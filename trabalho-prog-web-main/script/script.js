@@ -33,8 +33,6 @@ const abrirModalEditar = (index) => {
     document.getElementById('novoEmail').value = cliente.email;
     document.getElementById('novaCidade').value = cliente.cidade;
     document.getElementById('novoTel').value = cliente.telefone;
-
-    // Armazena o índice do cliente atual sendo editado para atualização posterior
     btnAtualizarCliente.dataset.index = index;
 }
 
