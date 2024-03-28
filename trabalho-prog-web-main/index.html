@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Clientes</h1>
+    </header>
+    <div class="btnArea">
+        <button id="abrirModal">Cadastrar</button>
+    </div>
+    <main>
+        <table id="tableClients">        
+        </table>
+    </main>
+    <div class="modal">
+        <div>
+            <h2>Cadastrar Cliente</h2>
+        </div>
+
+        <div class="container">
+            <div>
+                <label>Digite seu nome:</label>
+                <input type="text" placeholder="Seu nome" class="input" id="nome" required>
+            </div>
+            <div>
+                <label>Digite seu e-mail:</label>
+                <input type="email" placeholder="Seu e-mail" class="input" id="email" required>
+            </div>
+            <div>
+                <label>Digite seu telefone:</label>
+                <input type="tel" placeholder="Seu telefone" class="input" id="tel" required>
+            </div>
+            <div>
+                <label>Digite sua cidade:</label>
+                <input type="text" placeholder="Sua cidade" class="input" id="cidade" required>
+            </div>
+            <div class="btnsContainer">
+                <button id="cadastrarCliente">Cadastrar</button>
+                <button id="fecharModal" class="red">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modalEditar modal" id="modalEditar">
+        <div>
+            <h2>Editar Cliente</h2>
+        </div>
+        <div class="container">
+            <div>
+                <label>Digite seu nome:</label>
+                <input type="text" placeholder="Seu nome" class="input" id="novoNome" required>
+            </div>
+            <div>
+                <label>Digite seu e-mail:</label>
+                <input type="email" placeholder="Seu e-mail" class="input" id="novoEmail" required>
+            </div>
+            <div>
+                <label>Digite seu telefone:</label>
+                <input type="tel" placeholder="Seu telefone" class="input" id="novoTel" required>
+            </div>
+            <div>
+                <label>Digite sua cidade:</label>
+                <input type="text" placeholder="Sua cidade" class="input" id="novaCidade" required>
+            </div>
+            <div class="btnsContainer">
+                <button id="editarClienteBtn">Editar</button>
+                <button id="fecharModalEditar" class="red">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
